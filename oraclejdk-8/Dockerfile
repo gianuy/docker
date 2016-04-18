@@ -54,3 +54,5 @@ RUN \
 
 RUN echo "export PATH=$PATH:/opt/payara41/glassfish/bin" >> /opt/payara/.bashrc
 
+# start payara
+CMD ["/opt/payara41/glassfish/bin/asadmin", "start-domain", "-v", "payaradomain"]
